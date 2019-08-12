@@ -1,8 +1,4 @@
-% % % % % % % % % % % % % % % % % % % % % % Code for Pulse Code Modulation
-% % % % % % % % % % % % % % % % % % % % % % % % Code By:- Debaraj Rana
-% % % % % % % % % % % % % % % % % % % % % % % % mail- debaraj.rana@ymail.com
-% % % % % % % % % % % % % % % % % % % % % % % % Dept. Of Electronics & Telecom. Engg
-% % % % % % % % % % % % % % % % % % % % % % % % VSSUT, Burla,ORISSA
+
 clc;
 close all;
 clear all;
@@ -15,7 +11,7 @@ L=2^n;
 % subplot(2,2,1);
 % plot(x,y);grid on;
 % Sampling Operation
-x=0:2*pi/n1:4*pi;               % n1 nuber of samples have tobe selected
+x=0:2*pi/n1:4*pi;               % n1 nuber of samples have to be selected
 s=8*sin(x);
 subplot(3,1,1);
 plot(s);
@@ -42,7 +38,7 @@ stem(s);grid on;  title('Sampled Sinal');  ylabel('Amplitude--->');  xlabel('Tim
     i=i+1;
  end   
   for i=1:l2
-     if(q(i)==vmin-(del/2))                          % To make quantize value inbetween the levels
+     if(q(i)==vmin-(del/2))                          % To make quantize value in between the levels
          q(i)=vmin+(del/2);
      end
  end    
